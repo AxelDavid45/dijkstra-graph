@@ -24,9 +24,13 @@ public class Main {
         distancias.insertarArista(1, 4, 3);
         distancias.insertarArista(4, 1, 1);
         
+        dijkstra dj = new dijkstra(distancias, 1);
+        dj.caminoMinimos();
+        dj.recuperaCamino(4);
+        System.out.println("");
         distancias.imprimirGrafo();
-        distancias.borrarVertice(4);        
-        distancias.imprimirGrafo();
+//        distancias.borrarVertice(4);        
+//        distancias.imprimirGrafo();
     }
 
 }

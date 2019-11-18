@@ -5,6 +5,7 @@ import java.util.Vector;
 public class Grafo {
 
     int[][] matrizAdyacencia;
+    static int INFINITO = 0;
     Vector vertices;
     
     public Grafo(Vector v) {
@@ -73,4 +74,10 @@ public class Grafo {
             for(int j = 0; j < this.matrizAdyacencia.length; j++)
                 matrizAdyacenciaTmp[i][j] = matrizAdyacencia[i][j];
     }
+   
+    public int numeroDeVertices() {
+        return vertices.size();
+    }
+    
+   
 }
